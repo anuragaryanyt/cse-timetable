@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="1024, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIIT Time Table</title>
+    <script>var viewMode = getCookie("view-mode");
+        if(viewMode == "desktop"){
+            viewport.setAttribute('content', 'width=1024');
+        }else if (viewMode == "mobile"){
+            viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+        }</script>
 </head>
 <frameset rows="30%,70%">
     <frameset cols="100%">
